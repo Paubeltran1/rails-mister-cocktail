@@ -1,0 +1,46 @@
+#doses-control {
+  margin-top: -72px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.dose-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  border-radius: 16px;
+  margin: 2px 0;
+  padding: 0 10px 0 15px;
+  background-color: rgba(0, 0, 0, 0);
+
+  transition: background-color .15s linear ;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, .05);
+    a {
+      opacity: 0.8;
+    }
+  }
+
+  a {
+    display: inline-block;
+    height: 20px;
+    opacity: 0;
+
+    transition: opacity .15s linear ;
+    // transform: translateY(2px);
+
+    .delete-cross {
+      display: block;
+      width: 20px;
+    }
+  }
+}
+
+.dose-form {
+  padding-left: 15px;
+}
